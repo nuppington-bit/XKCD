@@ -12,7 +12,7 @@ def cli(random):
     """XKCD Terminal Tool"""
     try:
         from sh import lolcat, figlet # Hacky fix for Build to pass system packages
-        print(lolcat(figlet("-c", "X K C D")))
+        print(lolcat(figlet("X K C D")))
     except ImportError:
         print("Welcome to xkcd Comics!")
     try:
