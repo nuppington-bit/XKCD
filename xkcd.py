@@ -11,8 +11,8 @@ from random import randint
 def cli(random):
     """XKCD Terminal Tool"""
     try:
-        from sh import lolcat, figlet # Hacky fix for Build to pass system packages
-        print(lolcat(figlet("X K C D")))
+        from sh import figlet # Hacky fix for Build to pass system packages
+        print(figlet("X K C D"))
     except ImportError:
         print("Welcome to xkcd Comics!")
     try:
